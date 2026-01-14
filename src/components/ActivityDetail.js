@@ -1,53 +1,70 @@
 export function ActivityDetail(id) {
-    const activitiesData = {
-        "programming": {
-            title: "Programming",
-            icon: "💻",
-            content: `
-            <p>Webアプリ、モバイルアプリ、ゲーム開発など、ソフトウェア開発の様々な分野に取り組んでいます。</p>
+  const activitiesData = {
+    "programming": {
+      title: "Programming",
+      icon: "💻",
+      content: `
+            <p>Webアプリ，モバイルアプリ，ゲーム開発など，ソフトウェア開発の様々な分野に取り組んでいます．</p>
             <h3>最近のプロジェクト</h3>
             <ul>
-                <li><strong>高専祭Webサイト:</strong> 毎年の高専祭のためのReact製Webアプリケーション。</li>
-                <li><strong>Unityゲーム:</strong> 1年生が中心となって開発した3Dアクションゲーム。</li>
-                <li><strong>CTFチーム:</strong> セキュリティコンテスト「Capture The Flag」への参加と勉強会。</li>
+                <li><strong>同好会Webサイト:</strong> 米子高専同好会初となるWebアプリケーション．</li>
+                <li><strong>Unityゲーム:</strong> 3年生が中心となって開発した3Dアクションゲーム．</li>
+                <li><strong>CTF:</strong> セキュリティコンテスト「Capture The Flag」の勉強会．</li>
             </ul>
-            <p>週に一度の定例会では、メンバー同士で知識を共有したり、チーム開発の進捗報告を行ったりしています。</p>
         `
-        },
-        "dtm": {
-            title: "DTM (Desktop Music)",
-            icon: "🎵",
-            content: `
-            <p>DTM班では、FL StudioやCubaseなどのDAWソフトを使ってオリジナル楽曲を制作しています。</p>
+    },
+    "ai": {
+      title: "Artificial Intelligence",
+      icon: "🤖",
+      content: `
+            <p>PythonやPyTorchを用いて機械学習や深層学習（ディープラーニング）のモデル構築・学習を行っています．</p>
             <h3>活動内容</h3>
             <ul>
-                <li>ゲーム制作班への楽曲・効果音の提供。</li>
-                <li>「M3」などの同人音楽即売会でのアルバム頒布。</li>
-                <li>部内での楽曲発表会・講評会。</li>
+                <li>画像認識・強化学習モデルの作成と学習．</li>
+                <li>最新のAI論文の輪読会と実装．</li>
             </ul>
-            <p>楽器経験がなくても大丈夫です!</p>
+            <p>数学や統計学の知識も身につけながら，最先端の技術に触れることができます．</p>
         `
-        },
-        "server": {
-            title: "Server / Network",
-            icon: "🌐",
-            content: `
-            <p>部室内のオンプレミスサーバーとネットワークインフラを学生自身で運用・管理しています。</p>
-            <h3>インフラストラクチャ</h3>
+    },
+    "algorithm": {
+      title: "Algorithms",
+      icon: "🧩",
+      content: `
+            <p>アルゴリズム学習班では，効率的なプログラムを書くためのアルゴリズムやデータ構造を学び，競技プログラミングに取り組んでいます．</p>
+            <h3>活動内容</h3>
             <ul>
-                <li><strong>Proxmoxクラスタ:</strong> 部員の開発用VMやコンテナのホスティング基盤。</li>
-                <li><strong>Webホスティング:</strong> 学生プロジェクトやポートフォリオサイトの公開。</li>
-                <li><strong>ネットワークラボ:</strong> ルーティングやスイッチングの実践的な学習環境。</li>
+                <li><strong>AtCoder:</strong> 毎週開催されるプログラミングコンテストへの参加と過去問演習．</li>
+                <li><strong>アルゴリズム勉強会:</strong> 探索，動的計画法，グラフ理論などの基礎から応用まで．</li>
+                <li><strong>ICPC:</strong> 国際大学対抗プログラミングコンテストへの挑戦．</li>
             </ul>
-            <p>インターネットがどのように動いているのか、実際に手を動かしながら学ぶことができます。</p>
+            <p>論理的思考力を鍛え，問題を効率的に解決する力を養います．</p>
         `
-        }
-    };
+    },
+    "procon": {
+      title: "Kosen Procon",
+      icon: "🏆",
+      content: `
+              <p>全国高等専門学校プログラミングコンテストは，全国の高専生が日頃の学習成果を活かし，情報技術（IT）におけるアイデアと実現力を競う大会です．</p>
+              <p>米子高専コンピュータ同好会は，全国大会に連続で出場しています．</p>
+              <h3>取り組み</h3>
+              <ul>
+                  <li><strong>課題部門:</strong> テーマに沿った作品を企画・開発し，プレゼンテーションを行います．</li>
+                  <li><strong>自由部門:</strong> 自由な発想で独創的な作品を開発します．</li>
+                  <li><strong>競技部門:</strong> 与えられたルールに基づく対抗戦で，アルゴリズムと戦略を競います．</li>
+              </ul>
+              <h3>実績</h3>
+              <ul>
+                  <li><strong>2025年:</strong> 競技部門-ラストワン決定戦出場</li>
+                  <li><strong>2024年:</strong> 競技部門-準決勝出場</li>
+              </ul>
+          `
+    }
+  };
 
-    const activity = activitiesData[id];
+  const activity = activitiesData[id];
 
-    if (!activity) {
-        return `
+  if (!activity) {
+    return `
       <section class="section">
         <div class="container">
           <h2>活動が見つかりません</h2>
@@ -55,9 +72,9 @@ export function ActivityDetail(id) {
         </div>
       </section>
     `;
-    }
+  }
 
-    return `
+  return `
     <section class="section activity-detail-section">
       <div class="container">
         <a href="#" class="back-link">← ホームに戻る</a>

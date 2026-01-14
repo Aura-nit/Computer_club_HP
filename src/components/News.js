@@ -1,8 +1,7 @@
 export function News() {
     const newsItems = [
-        { id: "1", date: "2024.04.01", title: "新入生歓迎会のお知らせ", category: "Event" },
-        { id: "2", date: "2024.03.15", title: "春休みプログラミング合宿を行いました", category: "Activity" },
-        { id: "3", date: "2024.02.10", title: "Webサイトをリニューアルしました", category: "Update" },
+        { id: "1", date: "2026.01.14", title: "Webサイトをリニューアルしました", category: "Update" },
+        { id: "2", date: "2025.10.12", title: "高専プロコン全国大会に参加しました", category: "Activity" },
     ];
 
     return `
