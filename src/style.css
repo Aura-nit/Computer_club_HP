@@ -156,23 +156,7 @@ img {
   color: #888;
 }
 
-.footer-actions {
-  margin-top: var(--spacing-md);
-}
 
-.footer-link {
-  color: var(--primary-color);
-  font-size: 0.9rem;
-  border: 1px solid var(--primary-color);
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  display: inline-block;
-}
-
-.footer-link:hover {
-  background-color: rgba(0, 255, 255, 0.1);
-  text-decoration: none;
-}
 
 /* Button Styles */
 .btn {
